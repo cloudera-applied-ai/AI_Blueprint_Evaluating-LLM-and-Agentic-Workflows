@@ -1,0 +1,50 @@
+[
+  {
+    "example_id": "uc2_cnc01_high_welding",
+    "machine_id": "CNC-01",
+    "alert_timestamp": "2025-06-24T10:15:00Z",
+    "defect_rate": "0.21",
+    "risk_level": "HIGH",
+    "expected_output": "CNC-01 is confirmed HIGH severity with the root cause identified as a worn welding tip, and the corrective action is a production stop and welding-tip change. A work order for CNC-01 is created."
+  },
+  {
+    "example_id": "uc2_cnc01_high_welding_2",
+    "machine_id": "CNC-01",
+    "alert_timestamp": "2025-06-24T10:20:00Z",
+    "defect_rate": "0.19",
+    "risk_level": "HIGH",
+    "expected_output": "CNC-01 is confirmed HIGH severity with the root cause identified as a worn welding tip, and the corrective action is a production stop and welding-tip change. A work order for CNC-01 is created."
+  },
+  {
+    "example_id": "uc2_paint01_medium_humidity",
+    "machine_id": "PAINT-01",
+    "alert_timestamp": "2025-06-24T14:30:00Z",
+    "defect_rate": "0.10",
+    "risk_level": "MEDIUM",
+    "expected_output": "PAINT-01 is confirmed MEDIUM severity with the root cause identified as paint-booth humidity drift, and the corrective action is an HVAC/dehumidifier adjustment before the next shift."
+  },
+  {
+    "example_id": "uc2_bat01_investigate_thermal",
+    "machine_id": "BAT-01",
+    "alert_timestamp": "2025-06-24T09:30:00Z",
+    "defect_rate": "0.11",
+    "risk_level": "INVESTIGATE",
+    "expected_output": "BAT-01 is classified INVESTIGATE with the likely cause identified as a battery thermal anomaly, and the corrective action is a cooling-system inspection with charge-cycle correlation rather than a line stop."
+  },
+  {
+    "example_id": "uc2_cnc01_low_stable",
+    "machine_id": "CNC-01",
+    "alert_timestamp": "2025-06-24T08:00:00Z",
+    "defect_rate": "0.03",
+    "risk_level": "LOW",
+    "expected_output": "CNC-01 is confirmed LOW severity and stable, so no corrective action is required and the recommendation is to continue normal production with routine monitoring."
+  },
+  {
+    "example_id": "uc2_paint01_low_stable",
+    "machine_id": "PAINT-01",
+    "alert_timestamp": "2025-06-24T09:00:00Z",
+    "defect_rate": "0.03",
+    "risk_level": "LOW",
+    "expected_output": "PAINT-01 is confirmed LOW severity and stable, so no corrective action is required and the recommendation is to continue normal operation with routine monitoring."
+  }
+]

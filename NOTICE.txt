@@ -1,0 +1,1339 @@
+================================================================================
+================================================================================
+
+           Third-Party Software for Evaluating LLM & Agentic Workflows
+
+--------------------------------------------------------------------------------
+
+The product or component covered by this notice file is subject to copyright owned by Cloudera, the Apache Software Foundation or other third parties, as applicable, and the copyright owner reserves all rights.
+
+The following notices and licenses apply to various third party software packages, including open source software packages, which are distributed with the product identified in this file or accompanying this file.  Such product (i) may not include all of the referenced third party software packages or include only a portion of a given package and (ii) may also include other components, which may contain additional third party software packages as identified in their separate respective notice files.
+
+To the extent required by the license associated with a third party software package, Cloudera, Inc. will provide a copy of the third party software package’s source code upon request and at a reasonable fee.  All requests for source code must be made in writing and mailed to "Cloudera, Inc., ATTN: Legal Dept.,5470 Great America Pkwy, Santa Clara, CA 95054" and include the following information: (i) the name and version number of the covered binary, (ii) name and the version number of the Cloudera product containing the covered binary, (iii) your name, (iv) your company or organization name (if applicable), (v) the license under which you are requesting the source code to be provided, and (vi) your return mailing and email address (if available).
+
+The following 3rd-party software packages may be used by or distributed with cai-eval-platform (RELENG-37857). Any information relevant to third-party vendors listed below are collected using common, reasonable means.
+
+Date generated: 2026-10-7
+
+Revision ID: f90d3fca3be4ca5926a99263558841fa3a224635
+
+================================================================================
+================================================================================
+
+
+
+================================================================================
+
+                                  Dependencies
+
+================================================================================
+
+- arize-phoenix (19.13.0) [proprietary-license, Apache-2.0, MIT, PSF-2.0]
+- click (8.1) [BSD-3-Clause]
+- datasets (2.14.0) [Apache-2.0, Unlicense]
+- fastapi (0.141.1) [MIT, Apache-2.0]
+- httpx (0.27) [BSD-3-Clause]
+- mkdocs-material (9.7.7) [MIT, Apache-2.0, CC-BY-4.0, 0BSD, OFL-1.1]
+- openai (1.0.0) [Apache-2.0]
+- openinference-instrumentation-openai (0.1.53) [Apache-2.0]
+- opentelemetry-exporter-otlp-proto-http (1.44.0) [Apache-2.0]
+- opentelemetry-sdk (1.44.0) [Apache-2.0]
+- pillow (12.3.0) [PIL, 0BSD, CC0-1.0, Apache-2.0, OFL-1.1, BitstreamVera, HPND, MIT, mit-modern, TCL]
+- pydantic (2.13.4) [MIT]
+- ragas (0.4.3) [Apache-2.0, CC-BY-NC-SA-4.0]
+- uvicorn (0.27.0) [BSD-3-Clause]
+
+--------------------------------------------------------------------------------
+Package Title: arize-phoenix (19.13.0)
+
+Package Locator: pip+arize-phoenix$19.13.0
+
+Package Depth: Direct
+--------------------------------------------------------------------------------
+
+AI Observability and Evaluation
+
+* Declared Licenses *
+proprietary-license
+--------------------------------------------------------------------------------
+File matches:
+- LICENSE
+--------------------------------------------------------------------------------
+
+* Other Licenses *
+Apache-2.0, MIT, PSF-2.0
+
+* Apache-2.0 *
+--------------------------------------------------------------------------------
+File matches:
+- src/phoenix/vendor/json_canonicalization_scheme/Canonicalize.py
+  - Copyright (c) 2006-2019 WebPKI.org (http://webpki.org).
+- src/phoenix/vendor/json_canonicalization_scheme/LICENSE
+- src/phoenix/vendor/json_canonicalization_scheme/NumberToJson.py
+  - Copyright (c) 2006-2019 WebPKI.org (http://webpki.org).
+--------------------------------------------------------------------------------
+
+* MIT *
+--------------------------------------------------------------------------------
+File matches:
+- src/phoenix/server/agents/capabilities/skills/LICENSE
+  - Copyright (c)  Douglas Trajano 2025 to present
+--------------------------------------------------------------------------------
+
+* PSF-2.0 *
+--------------------------------------------------------------------------------
+File matches:
+- src/phoenix/vendor/json_canonicalization_scheme/LICENSE.PSF
+  - Copyright (c) 2001, 2002, 2003, 2004, 2005, 2006, 2007, 2008, 2009, 2010 
+--------------------------------------------------------------------------------
+
+* Copyrights *
+Apache-2.0
+- Copyright (c) 2006-2019 WebPKI.org (http://webpki.org).
+MIT
+- Copyright (c)  Douglas Trajano 2025 to present
+PSF-2.0
+- Copyright (c) 2001, 2002, 2003, 2004, 2005, 2006, 2007, 2008, 2009, 2010 
+
+* Package Info *
+
+Authors: Arize AI <phoenix-devs@arize.com>
+Package Manager: Pip
+Project URL: https://pypi.org/project/arize-phoenix/
+Package Download URL: https://files.pythonhosted.org/packages/c7/0c/ff623ff9b3a39bc5f305df637c625d1c5211d5343d2e63ff178e1e19928f/arize_phoenix-19.13.0.tar.gz
+Dependency Path: arize-phoenix
+
+--------------------------------------------------------------------------------
+Package Title: click (8.1)
+
+Package Locator: pip+click$8.1
+
+Package Depth: Direct
+--------------------------------------------------------------------------------
+
+Composable command line interface toolkit
+
+* Other Licenses *
+BSD-3-Clause
+--------------------------------------------------------------------------------
+File matches:
+- LICENSE.rst
+  - Copyright (c) 2014 Pallets
+--------------------------------------------------------------------------------
+
+* Copyrights *
+BSD-3-Clause
+- Copyright (c) 2014 Pallets
+
+* Package Info *
+
+Authors: armin.ronacher@active-4.com
+Package Manager: Pip
+Project URL: https://pypi.org/project/click/
+Package Download URL: https://files.pythonhosted.org/packages/45/2b/7ebad1e59a99207d417c0784f7fb67893465eef84b5b47c788324f1b4095/click-8.1.0.tar.gz
+Dependency Path: click
+
+--------------------------------------------------------------------------------
+Package Title: datasets (2.14.0)
+
+Package Locator: pip+datasets$2.14.0
+
+Package Depth: Direct
+--------------------------------------------------------------------------------
+
+HuggingFace community-driven open-source library of datasets
+
+* Declared Licenses *
+Apache-2.0
+--------------------------------------------------------------------------------
+File matches:
+- LICENSE
+- setup.py
+- src/datasets/__init__.py
+  - Copyright (c) 2020 The HuggingFace Datasets Authors and the TensorFlow Datasets Authors.
+- src/datasets/arrow_dataset.py
+  - Copyright (c) 2020 The HuggingFace Authors.
+- src/datasets/arrow_reader.py
+  - Copyright (c) 2020 The HuggingFace Datasets Authors and the TensorFlow Datasets Authors.
+- src/datasets/arrow_writer.py
+  - Copyright (c) 2020 The HuggingFace Datasets Authors and the TensorFlow Datasets Authors.
+- src/datasets/builder.py
+  - Copyright (c) 2020 The HuggingFace Datasets Authors and the TensorFlow Datasets Authors.
+- src/datasets/download/download_manager.py
+  - Copyright (c) 2020 The TensorFlow Datasets Authors.
+- src/datasets/download/mock_download_manager.py
+  - Copyright (c) 2020 The TensorFlow Datasets Authors.
+- src/datasets/features/features.py
+  - Copyright (c) 2020 The HuggingFace Datasets Authors and the TensorFlow Datasets Authors.
+- src/datasets/formatting/__init__.py
+  - Copyright (c) 2020 The HuggingFace Datasets Authors and the TensorFlow Datasets Authors.
+- src/datasets/formatting/formatting.py
+  - Copyright (c) 2020 The HuggingFace Authors.
+- src/datasets/formatting/jax_formatter.py
+  - Copyright (c) 2021 The HuggingFace Authors.
+- src/datasets/formatting/np_formatter.py
+  - Copyright (c) 2020 The HuggingFace Authors.
+- src/datasets/formatting/tf_formatter.py
+  - Copyright (c) 2020 The HuggingFace Authors.
+- src/datasets/formatting/torch_formatter.py
+  - Copyright (c) 2020 The HuggingFace Authors.
+- src/datasets/info.py
+  - Copyright (c) 2020 The HuggingFace Datasets Authors and the TensorFlow Datasets Authors.
+- src/datasets/inspect.py
+  - Copyright (c) 2020 The HuggingFace Datasets Authors.
+- src/datasets/keyhash.py
+  - Copyright (c) 2020 The HuggingFace Datasets Authors and the TensorFlow Datasets Authors.
+- src/datasets/load.py
+  - Copyright (c) 2020 The HuggingFace Datasets Authors and the TensorFlow Datasets Authors.
+- src/datasets/metric.py
+  - Copyright (c) 2020 The HuggingFace Datasets Authors
+- src/datasets/naming.py
+  - Copyright (c) 2020 The HuggingFace Datasets Authors and the TensorFlow Datasets Authors.
+- src/datasets/splits.py
+  - Copyright (c) 2020 The HuggingFace Datasets Authors and the TensorFlow Datasets Authors.
+- src/datasets/utils/__init__.py
+  - Copyright (c) 2020 The HuggingFace Datasets Authors and the TensorFlow Datasets Authors.
+- src/datasets/utils/logging.py
+  - Copyright (c) 2020 Optuna, Hugging Face
+- src/datasets/utils/py_utils.py
+  - Copyright (c) 2020 The HuggingFace Datasets Authors and the TensorFlow Datasets Authors.
+- src/datasets/utils/tf_utils.py
+  - Copyright (c) 2022 The HuggingFace Datasets Authors and the TensorFlow Datasets Authors.
+- src/datasets/utils/version.py
+  - Copyright (c) 2020 The HuggingFace Datasets Authors and the TensorFlow Datasets Authors.
+- tests/test_metric_common.py
+  - Copyright (c) 2020 HuggingFace Inc.
+--------------------------------------------------------------------------------
+
+* Other Licenses *
+Unlicense
+--------------------------------------------------------------------------------
+File matches:
+- src/datasets/utils/filelock.py
+--------------------------------------------------------------------------------
+
+* Copyrights *
+Apache-2.0
+- Copyright (c) 2020 The HuggingFace Datasets Authors and the TensorFlow Datasets Authors.
+- Copyright (c) 2020 The TensorFlow Datasets Authors.
+- Copyright (c) 2020 The HuggingFace Authors.
+- Copyright (c) 2020 The HuggingFace Datasets Authors.
+- Copyright (c) 2020 HuggingFace Inc.
+- Copyright (c) 2021 The HuggingFace Authors.
+- Copyright (c) 2020 The HuggingFace Datasets Authors
+- Copyright (c) 2022 The HuggingFace Datasets Authors and the TensorFlow Datasets Authors.
+- Copyright (c) 2020 Optuna, Hugging Face
+
+* Package Info *
+
+Authors: thomas@huggingface.co
+Package Manager: Pip
+Project URL: https://github.com/huggingface/datasets
+Package Download URL: https://files.pythonhosted.org/packages/30/ae/29aebfd96fa29e73e99e5d5b0db19e7b9857718de84c9f3172acae0a6234/datasets-2.14.0.tar.gz
+Dependency Path: datasets
+
+--------------------------------------------------------------------------------
+Package Title: fastapi (0.141.1)
+
+Package Locator: pip+fastapi$0.141.1
+
+Package Depth: Direct
+--------------------------------------------------------------------------------
+
+FastAPI framework, high performance, easy to learn, fast to code, ready for production
+
+* Declared Licenses *
+MIT
+--------------------------------------------------------------------------------
+File matches:
+- LICENSE
+  - Copyright (c) 2018 Sebastián Ramírez
+--------------------------------------------------------------------------------
+
+* Other Licenses *
+Apache-2.0
+--------------------------------------------------------------------------------
+File matches:
+- fastapi/applications.py
+--------------------------------------------------------------------------------
+
+* Copyrights *
+MIT
+- Copyright (c) 2018 Sebastián Ramírez
+
+* Package Info *
+
+Authors: Sebastián Ramírez <tiangolo@gmail.com>
+Package Manager: Pip
+Project URL: https://pypi.org/project/fastapi/
+Package Download URL: https://files.pythonhosted.org/packages/8a/02/91e3416a8fdd715abb903a952a6bec7cdd8d14eed55d415fc8595524c319/fastapi-0.141.1.tar.gz
+Dependency Path: fastapi
+
+--------------------------------------------------------------------------------
+Package Title: httpx (0.27)
+
+Package Locator: pip+httpx$0.27
+
+Package Depth: Direct
+--------------------------------------------------------------------------------
+
+The next generation HTTP client.
+
+* Declared Licenses *
+BSD-3-Clause
+--------------------------------------------------------------------------------
+File matches:
+- LICENSE.md
+  - Copyright (c) 2019 Encode OSS Ltd](https://www.encode.io/).
+--------------------------------------------------------------------------------
+
+* Copyrights *
+BSD-3-Clause
+- Copyright (c) 2019 Encode OSS Ltd](https://www.encode.io/).
+
+* Package Info *
+
+Authors: Tom Christie <tom@tomchristie.com>
+Package Manager: Pip
+Project URL: https://pypi.org/project/httpx/
+Package Download URL: https://files.pythonhosted.org/packages/5c/2d/3da5bdf4408b8b2800061c339f240c1802f2e82d55e50bd39c5a881f47f0/httpx-0.27.0.tar.gz
+Dependency Path: httpx
+
+--------------------------------------------------------------------------------
+Package Title: mkdocs-material (9.7.7)
+
+Package Locator: pip+mkdocs-material$9.7.7
+
+Package Depth: Direct
+--------------------------------------------------------------------------------
+
+<p align="center">
+  <a href="https://squidfunk.github.io/mkdocs-material/">
+    <img src="https://raw.githubusercontent.com/squidfunk/mkdocs-material/master/.github/assets/logo.svg" width="320" alt="Material for MkDocs">
+  </a>
+</p>
+
+<p align="center">
+  <strong>
+    A powerful documentation framework on top of
+    <a href="https://www.mkdocs.org/">MkDocs</a>
+  </strong>
+</p>
+
+<p align="center">
+  <a href="https://github.com/squidfunk/mkdocs-material/actions"><img
+    src="https://github.com/squidfunk/mkdocs-material/workflows/build/badge.svg?branch=master"
+    alt="Build"
+  /></a>
+  <a href="https://pypistats.org/packages/mkdocs-material"><img
+    src="https://img.shields.io/pypi/dm/mkdocs-material.svg"
+    alt="Downloads"
+  /></a>
+  <a href="https://pypi.org/project/mkdocs-material"><img
+    src="https://img.shields.io/pypi/v/mkdocs-material.svg"
+    alt="Python Package Index"
+  /></a>
+  <a href="https://hub.docker.com/r/squidfunk/mkdocs-material/"><img
+    src="https://img.shields.io/docker/pulls/squidfunk/mkdocs-material"
+    alt="Docker Pulls"
+  /></a>
+  <a href="https://github.com/sponsors/squidfunk"><img
+    src="https://img.shields.io/github/sponsors/squidfunk"
+    alt="Sponsors"
+  /></a>
+</p>
+
+<p align="center">
+  Write your documentation in Markdown and create a professional static site for
+  your Open Source or commercial project in minutes – searchable, customizable,
+  more than 60 languages, for all devices.
+</p>
+
+<p align="center">
+  <a href="https://squidfunk.github.io/mkdocs-material/getting-started/">
+    <img src="https://raw.githubusercontent.com/squidfunk/mkdocs-material/master/.github/assets/screenshot.png" width="700" />
+  </a>
+</p>
+
+<p align="center">
+  <em>
+    Check out the demo –
+    <a
+      href="https://squidfunk.github.io/mkdocs-material/"
+    >squidfunk.github.io/mkdocs-material</a>.
+  </em>
+</p>
+
+<h2></h2>
+<p id="premium-sponsors">&nbsp;</p>
+<p align="center"><strong>Silver sponsors</strong></p>
+<p align="center">
+  <a href="https://fastapi.tiangolo.com/" target=_blank><img
+    src="https://raw.githubusercontent.com/squidfunk/mkdocs-material/master/.github/assets/sponsors/sponsor-fastapi.png" height="120"
+  /></a>
+  <a href="https://www.trendpop.com/" target=_blank><img
+    src="https://raw.githubusercontent.com/squidfunk/mkdocs-material/master/.github/assets/sponsors/sponsor-trendpop.png" height="120"
+  /></a>
+</p>
+<p>&nbsp;</p>
+<p align="center"><strong>Bronze sponsors</strong></p>
+<p align="center">
+  <a href="https://cirrus-ci.org/" target=_blank><img
+    src="https://raw.githubusercontent.com/squidfunk/mkdocs-material/master/.github/assets/sponsors/sponsor-cirrus-ci.png" height="58"
+  /></a>
+  <a href="https://docs.baslerweb.com/" target=_blank><img
+    src="https://raw.githubusercontent.com/squidfunk/mkdocs-material/master/.github/assets/sponsors/sponsor-basler.png" height="58"
+  /></a>
+  <a href="https://kx.com/" target=_blank><img
+    src="https://raw.githubusercontent.com/squidfunk/mkdocs-material/master/.github/assets/sponsors/sponsor-kx.png" height="58"
+  /></a>
+  <a href="https://www.manticoregames.com/" target=_blank><img
+    src="https://raw.githubusercontent.com/squidfunk/mkdocs-material/master/.github/assets/sponsors/sponsor-manticore-games.png" height="58"
+  /></a>
+  <a href="https://orion-docs.prefect.io/" target=_blank><img
+    src="https://raw.githubusercontent.com/squidfunk/mkdocs-material/master/.github/assets/sponsors/sponsor-prefect.png" height="58"
+  /></a>
+  <a href="https://datadoghq.com/" target=_blank><img
+    src="https://raw.githubusercontent.com/squidfunk/mkdocs-material/master/.github/assets/sponsors/sponsor-datadog.png" height="58"
+  /></a>
+  <a href="https://www.zenoss.com/" target=_blank><img
+    src="https://raw.githubusercontent.com/squidfunk/mkdocs-material/master/.github/assets/sponsors/sponsor-zenoss.png" height="58"
+  /></a>
+  <a href="https://docs.posit.co" target=_blank><img
+    src="https://raw.githubusercontent.com/squidfunk/mkdocs-material/master/.github/assets/sponsors/sponsor-posit.png" height="58"
+  /></a>
+  <a href="https://n8n.io" target=_blank><img
+    src="https://raw.githubusercontent.com/squidfunk/mkdocs-material/master/.github/assets/sponsors/sponsor-n8n.png" height="58"
+  /></a>
+  <a href="https://www.dogado.de" target=_blank><img
+    src="https://raw.githubusercontent.com/squidfunk/mkdocs-material/master/.github/assets/sponsors/sponsor-dogado.png" height="58"
+  /></a>
+  <a href="https://wwt.com" target=_blank><img
+    src="https://raw.githubusercontent.com/squidfunk/mkdocs-material/master/.github/assets/sponsors/sponsor-wwt.png" height="58"
+  /></a>
+  <a href="https://coda.io" target=_blank><img
+    src="https://raw.githubusercontent.com/squidfunk/mkdocs-material/master/.github/assets/sponsors/sponsor-coda.png" height="58"
+  /></a>
+  <a href="https://elastic.co" target=_blank><img
+    src="https://raw.githubusercontent.com/squidfunk/mkdocs-material/master/.github/assets/sponsors/sponsor-elastic.png" height="58"
+  /></a>
+  <a href="https://ipfabric.io/" target=_blank><img
+    src="https://raw.githubusercontent.com/squidfunk/mkdocs-material/master/.github/assets/sponsors/sponsor-ip-fabric.png" height="58"
+  /></a>
+  <a href="https://www.apex.ai/" target=_blank><img
+    src="https://raw.githubusercontent.com/squidfunk/mkdocs-material/master/.github/assets/sponsors/sponsor-apex-ai.png" height="58"
+  /></a>
+  <a href="https://jitterbit.com/" target=_blank><img
+    src="https://raw.githubusercontent.com/squidfunk/mkdocs-material/master/.github/assets/sponsors/sponsor-jitterbit.png" height="58"
+  /></a>
+  <a href="https://sparkfun.com/" target=_blank><img
+    src="https://raw.githubusercontent.com/squidfunk/mkdocs-material/master/.github/assets/sponsors/sponsor-sparkfun.png" height="58"
+  /></a>
+  <a href="https://eccenca.com/" target=_blank><img
+    src="https://raw.githubusercontent.com/squidfunk/mkdocs-material/master/.github/assets/sponsors/sponsor-eccenca.png" height="58"
+  /></a>
+  <a href="https://neptune.ai/" target=_blank><img
+    src="https://raw.githubusercontent.com/squidfunk/mkdocs-material/master/.github/assets/sponsors/sponsor-neptune-ai.png" height="58"
+  /></a>
+  <!-- <a href="https://cash.app/" target=_blank><img
+    src="https://raw.githubusercontent.com/squidfunk/mkdocs-material/master/.github/assets/sponsors/sponsor-cashapp.png" height="58"
+  /></a> -->
+  <a href="https://rackn.com/" target=_blank><img
+    src="https://raw.githubusercontent.com/squidfunk/mkdocs-material/master/.github/assets/sponsors/sponsor-rackn.png" height="58"
+  /></a>
+  <a href="https://civicactions.com/" target=_blank><img
+    src="https://raw.githubusercontent.com/squidfunk/mkdocs-material/master/.github/assets/sponsors/sponsor-civic-actions.png" height="58"
+  /></a>
+  <a href="https://bitcrowd.net/" target=_blank><img
+    src="https://raw.githubusercontent.com/squidfunk/mkdocs-material/master/.github/assets/sponsors/sponsor-bitcrowd.png" height="58"
+  /></a>
+  <a href="https://getscreen.me/" target=_blank><img
+    src="https://raw.githubusercontent.com/squidfunk/mkdocs-material/master/.github/assets/sponsors/sponsor-getscreenme.png" height="58"
+  /></a>
+  <a href="https://botcity.dev/" target=_blank><img
+    src="https://raw.githubusercontent.com/squidfunk/mkdocs-material/master/.github/assets/sponsors/sponsor-botcity.png" height="58"
+  /></a>
+  <a href="https://www.springernature.com/gp" target=_blank><img
+    src="https://raw.githubusercontent.com/squidfunk/mkdocs-material/master/.github/assets/sponsors/sponsor-sn-technology.png" height="58"
+  /></a>
+  <a href="https://kolena.io/" target=_blank><img
+    src="https://raw.githubusercontent.com/squidfunk/mkdocs-material/master/.github/assets/sponsors/sponsor-kolena.png" height="58"
+  /></a>
+  <a href="https://www.evergiving.com/" target=_blank><img
+    src="https://raw.githubusercontent.com/squidfunk/mkdocs-material/master/.github/assets/sponsors/sponsor-evergiving.png" height="58"
+  /></a>
+  <a href="https://koor.tech/" target=_blank><img
+    src="https://raw.githubusercontent.com/squidfunk/mkdocs-material/master/.github/assets/sponsors/sponsor-koor.png" height="58"
+  /></a>
+  <a href="https://astral.sh/" target=_blank><img
+    src="https://raw.githubusercontent.com/squidfunk/mkdocs-material/master/.github/assets/sponsors/sponsor-astral.png" height="58"
+  /></a>
+  <a href="https://oikolab.com/" target=_blank><img
+    src="https://raw.githubusercontent.com/squidfunk/mkdocs-material/master/.github/assets/sponsors/sponsor-oikolab.png" height="58"
+  /></a>
+  <a href="https://www.buhlergroup.com/" target=_blank><img
+    src="https://raw.githubusercontent.com/squidfunk/mkdocs-material/master/.github/assets/sponsors/sponsor-buhler.png" height="58"
+  /></a>
+  <a href="https://transformationflow.io/" target=_blank><img
+    src="https://raw.githubusercontent.com/squidfunk/mkdocs-material/master/.github/assets/sponsors/sponsor-transformationflow.png" height="58"
+  /></a>
+  <a href="https://3dr.com/" target=_blank><img
+    src="https://raw.githubusercontent.com/squidfunk/mkdocs-material/master/.github/assets/sponsors/sponsor-3dr.png" height="58"
+  /></a>
+</p>
+<p>&nbsp;</p>
+
+## Everything you would expect
+
+### It's just Markdown
+
+Focus on the content of your documentation and create a professional static site
+in minutes. No need to know HTML, CSS or JavaScript – let Material for MkDocs do
+the heavy lifting for you.
+
+### Works on all devices
+
+Serve your documentation with confidence – Material for MkDocs automatically
+adapts to perfectly fit the available screen estate, no matter the type or size
+of the viewing device. Desktop. Tablet. Mobile. All great.
+
+### Made to measure
+
+Make it yours – change the colors, fonts, language, icons, logo, and more with
+a few lines of configuration. Material for MkDocs can be easily extended and
+provides many options to alter appearance and behavior.
+
+### Fast and lightweight
+
+Don't let your users wait – get incredible value with a small footprint by using
+one of the fastest themes available with excellent performance, yielding optimal
+search engine rankings and happy users that return.
+
+### Built for everyone
+
+Make accessibility a priority – users can navigate your documentation with touch
+devices, keyboards, and screen readers. Semantic markup ensures that your
+documentation works for everyone.
+
+### Open Source
+
+Trust 20,000+ users – choose a mature and actively maintained solution built
+with state-of-the-art Open Source technologies. Keep ownership of your content
+without fear of vendor lock-in. Licensed under MIT.
+
+## Quick start
+
+Material for MkDocs can be installed with `pip`:
+
+``` sh
+pip install mkdocs-material
+```
+
+Add the following lines to `mkdocs.yml`:
+
+``` yaml
+theme:
+  name: material
+```
+
+For detailed installation instructions, configuration options, and a demo, visit
+[squidfunk.github.io/mkdocs-material][Material for MkDocs]
+
+  [Material for MkDocs]: https://squidfunk.github.io/mkdocs-material/
+
+## Trusted by ...
+
+### ... industry leaders
+
+[ArXiv](https://info.arxiv.org),
+[Atlassian](https://atlassian.github.io/data-center-helm-charts/),
+[AWS](https://aws.github.io/copilot-cli/),
+[Bloomberg](https://bloomberg.github.io/selekt/),
+[CERN](http://abpcomputing.web.cern.ch/),
+[CloudFlare](https://cloudflare.github.io/itty-router-openapi/),
+[Datadog](https://datadoghq.dev/integrations-core/),
+[Google](https://google.github.io/accompanist/),
+[Hewlett Packard](https://hewlettpackard.github.io/squest/),
+[ING](https://ing-bank.github.io/baker/),
+[Intel](https://open-amt-cloud-toolkit.github.io/docs/),
+[JetBrains](https://jetbrains.github.io/projector-client/mkdocs/),
+[LinkedIn](https://linkedin.github.io/school-of-sre/),
+[Microsoft](https://microsoft.github.io/code-with-engineering-playbook/),
+[Mozilla](https://mozillafoundation.github.io/engineering-handbook/),
+[Netflix](https://netflix.github.io/titus/),
+[Red Hat](https://ansible.readthedocs.io/projects/lint/),
+[Salesforce](https://policy-sentry.readthedocs.io/en/latest/),
+[SIEMENS](https://opensource.siemens.com/),
+[Slack](https://slackhq.github.io/circuit/),
+[Square](https://square.github.io/okhttp/),
+[Zalando](https://opensource.zalando.com/skipper/)
+
+### ... and successful Open Source projects
+
+[Arduino](https://arduino.github.io/arduino-cli/),
+[Auto-GPT](https://docs.agpt.co/),
+[AutoKeras](https://autokeras.com/),
+[BFE](https://www.bfe-networks.net/),
+[CentOS](https://docs.infra.centos.org/),
+[Crystal](https://crystal-lang.org/reference/),
+[Electron](https://www.electron.build/),
+[FastAPI](https://fastapi.tiangolo.com/),
+[GoReleaser](https://goreleaser.com/),
+[Knative](https://knative.dev/docs/),
+[Kubernetes](https://kops.sigs.k8s.io/),
+[kSQL](https://docs.ksqldb.io/),
+[Nokogiri](https://nokogiri.org/),
+[OpenFaaS](https://docs.openfaas.com/),
+[Percona](https://docs.percona.com/percona-monitoring-and-management/),
+[Pi-Hole](https://docs.pi-hole.net/),
+[Pydantic](https://pydantic-docs.helpmanual.io/),
+[PyPI](https://docs.pypi.org/),
+[Renovate](https://docs.renovatebot.com/),
+[Traefik](https://docs.traefik.io/),
+[Trivy](https://aquasecurity.github.io/trivy/),
+[Vapor](https://docs.vapor.codes/),
+[ZeroNet](https://zeronet.io/docs/),
+[WebKit](https://docs.webkit.org/),
+[WTF](https://wtfutil.com/)
+
+## License
+
+**MIT License**
+
+Copyright (c) 2016-2023 Martin Donath
+
+Permission is hereby granted, free of charge, to any person obtaining a copy
+of this software and associated documentation files (the "Software"), to
+deal in the Software without restriction, including without limitation the
+rights to use, copy, modify, merge, publish, distribute, sublicense, and/or
+sell copies of the Software, and to permit persons to whom the Software is
+furnished to do so, subject to the following conditions:
+
+The above copyright notice and this permission notice shall be included in
+all copies or substantial portions of the Software.
+
+THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+FITNESS FOR A PARTICULAR PURPOSE AND NON-INFRINGEMENT. IN NO EVENT SHALL THE
+AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING
+FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS
+IN THE SOFTWARE.
+
+
+* Declared Licenses *
+MIT
+
+* Other Licenses *
+Apache-2.0, CC-BY-4.0, 0BSD, OFL-1.1
+
+* Apache-2.0 *
+
+* CC-BY-4.0 *
+
+* 0BSD *
+
+* OFL-1.1 *
+
+* Copyrights *
+MIT
+- Copyright (c) 2016-2022 Martin Donath <martin.donath@squidfunk.com>
+CC-BY-4.0
+- Copyright (c) 2022 Fonticons, Inc. (https://fontawesome.com)
+0BSD
+- Copyright (c)  Microsoft Corporation.
+OFL-1.1
+- Copyright (c) 2022 Fonticons, Inc. (https://fontawesome.com)
+
+* Package Info *
+
+Authors: Martin Donath <martin.donath@squidfunk.com>
+Package Manager: Pip
+Project URL: https://pypi.org/project/mkdocs-material/9.5.3/
+Package Download URL: https://files.pythonhosted.org/packages/f1/cd/c05d3a530ba7934f144fb45f7203cd236adc25c7bdcc34673d202f4b0278/mkdocs_material-9.7.7.tar.gz
+Dependency Path: mkdocs-material
+
+--------------------------------------------------------------------------------
+Package Title: openai (1.0.0)
+
+Package Locator: pip+openai$1.0.0
+
+Package Depth: Direct
+--------------------------------------------------------------------------------
+
+The official Python library for the openai API
+
+* Declared Licenses *
+Apache-2.0
+--------------------------------------------------------------------------------
+File matches:
+- LICENSE
+  - Copyright (c) 2023 OpenAI
+--------------------------------------------------------------------------------
+
+* Copyrights *
+Apache-2.0
+- Copyright (c) 2023 OpenAI
+
+* Package Info *
+
+Authors: OpenAI <support@openai.com>
+Package Manager: Pip
+Project URL: https://pypi.org/project/openai/
+Package Download URL: https://files.pythonhosted.org/packages/32/92/559d5b2859950dd1f60f09e264b2f9749363c2cf6aa449698192d3dae98c/openai-1.0.0.tar.gz
+Dependency Path: openai
+
+--------------------------------------------------------------------------------
+Package Title: openinference-instrumentation-openai (0.1.53)
+
+Package Locator: pip+openinference-instrumentation-openai$0.1.53
+
+Package Depth: Direct
+--------------------------------------------------------------------------------
+
+OpenInference OpenAI Instrumentation
+
+* Declared Licenses *
+Apache-2.0
+--------------------------------------------------------------------------------
+File matches:
+- LICENSE
+  - Copyright (c)  The OpenInference Authors
+--------------------------------------------------------------------------------
+
+* Copyrights *
+Apache-2.0
+- Copyright (c)  The OpenInference Authors
+
+* Package Info *
+
+Authors: OpenInference Authors <oss@arize.com>
+Package Manager: Pip
+Project URL: https://pypi.org/project/openinference-instrumentation-openai/
+Package Download URL: https://files.pythonhosted.org/packages/d3/76/c63d692d6a21c348cda737e1c9abfdb2bcbca5cce731c929ceca5a2003a2/openinference_instrumentation_openai-0.1.53.tar.gz
+Dependency Path: openinference-instrumentation-openai
+
+--------------------------------------------------------------------------------
+Package Title: opentelemetry-exporter-otlp-proto-http (1.44.0)
+
+Package Locator: pip+opentelemetry-exporter-otlp-proto-http$1.44.0
+
+Package Depth: Direct
+--------------------------------------------------------------------------------
+
+OpenTelemetry Collector Protobuf over HTTP Exporter
+
+* Declared Licenses *
+Apache-2.0
+--------------------------------------------------------------------------------
+File matches:
+- LICENSE
+- src/opentelemetry/exporter/otlp/proto/http/__init__.py
+  - Copyright (c)  The OpenTelemetry Authors
+- src/opentelemetry/exporter/otlp/proto/http/_common/__init__.py
+  - Copyright (c)  The OpenTelemetry Authors
+- src/opentelemetry/exporter/otlp/proto/http/_log_exporter/__init__.py
+  - Copyright (c)  The OpenTelemetry Authors
+- src/opentelemetry/exporter/otlp/proto/http/metric_exporter/__init__.py
+  - Copyright (c)  The OpenTelemetry Authors
+- src/opentelemetry/exporter/otlp/proto/http/trace_exporter/__init__.py
+  - Copyright (c)  The OpenTelemetry Authors
+- src/opentelemetry/exporter/otlp/proto/http/trace_exporter/encoder/__init__.py
+  - Copyright (c)  The OpenTelemetry Authors
+- src/opentelemetry/exporter/otlp/proto/http/version/__init__.py
+  - Copyright (c)  The OpenTelemetry Authors
+- tests/metrics/test_otlp_metrics_exporter.py
+  - Copyright (c)  The OpenTelemetry Authors
+- tests/test_proto_log_exporter.py
+  - Copyright (c)  The OpenTelemetry Authors
+- tests/test_proto_span_exporter.py
+  - Copyright (c)  The OpenTelemetry Authors
+--------------------------------------------------------------------------------
+
+* Copyrights *
+Apache-2.0
+- Copyright (c)  The OpenTelemetry Authors
+
+* Package Info *
+
+Authors: OpenTelemetry Authors <cncf-opentelemetry-contributors@lists.cncf.io>
+Package Manager: Pip
+Project URL: https://pypi.org/project/opentelemetry-exporter-otlp-proto-http/
+Package Download URL: https://files.pythonhosted.org/packages/1a/87/95e2a5aaa795b4e2260d74e16df2d5541deb2ea9de010bcd615f4dee2654/opentelemetry_exporter_otlp_proto_http-1.44.0.tar.gz
+Dependency Path: opentelemetry-exporter-otlp-proto-http
+
+--------------------------------------------------------------------------------
+Package Title: opentelemetry-sdk (1.44.0)
+
+Package Locator: pip+opentelemetry-sdk$1.44.0
+
+Package Depth: Direct
+--------------------------------------------------------------------------------
+
+OpenTelemetry Python SDK
+
+* Declared Licenses *
+Apache-2.0
+--------------------------------------------------------------------------------
+File matches:
+- LICENSE
+- src/opentelemetry/sdk/__init__.pyi
+- src/opentelemetry/sdk/_configuration/__init__.py
+  - Copyright (c)  The OpenTelemetry Authors
+- src/opentelemetry/sdk/_logs/__init__.py
+  - Copyright (c)  The OpenTelemetry Authors
+- src/opentelemetry/sdk/_logs/_internal/__init__.py
+  - Copyright (c)  The OpenTelemetry Authors
+- src/opentelemetry/sdk/_logs/_internal/_exceptions.py
+  - Copyright (c)  The OpenTelemetry Authors
+- src/opentelemetry/sdk/_logs/_internal/_logger_metrics.py
+  - Copyright (c)  The OpenTelemetry Authors
+- src/opentelemetry/sdk/_logs/_internal/export/__init__.py
+  - Copyright (c)  The OpenTelemetry Authors
+- src/opentelemetry/sdk/_logs/_internal/export/in_memory_log_exporter.py
+  - Copyright (c)  The OpenTelemetry Authors
+- src/opentelemetry/sdk/_logs/export/__init__.py
+  - Copyright (c)  The OpenTelemetry Authors
+- src/opentelemetry/sdk/_shared_internal/__init__.py
+  - Copyright (c)  The OpenTelemetry Authors
+- src/opentelemetry/sdk/_shared_internal/_processor_metrics.py
+  - Copyright (c)  The OpenTelemetry Authors
+- src/opentelemetry/sdk/environment_variables/__init__.py
+  - Copyright (c)  The OpenTelemetry Authors
+- src/opentelemetry/sdk/environment_variables/_internal.py
+  - Copyright (c)  The OpenTelemetry Authors
+- src/opentelemetry/sdk/error_handler/__init__.py
+  - Copyright (c)  The OpenTelemetry Authors
+- src/opentelemetry/sdk/metrics/__init__.py
+  - Copyright (c)  The OpenTelemetry Authors
+- src/opentelemetry/sdk/metrics/_internal/__init__.py
+  - Copyright (c)  The OpenTelemetry Authors
+- src/opentelemetry/sdk/metrics/_internal/_view_instrument_match.py
+  - Copyright (c)  The OpenTelemetry Authors
+- src/opentelemetry/sdk/metrics/_internal/aggregation.py
+  - Copyright (c)  The OpenTelemetry Authors
+- src/opentelemetry/sdk/metrics/_internal/exceptions.py
+  - Copyright (c)  The OpenTelemetry Authors
+- src/opentelemetry/sdk/metrics/_internal/exemplar/__init__.py
+  - Copyright (c)  The OpenTelemetry Authors
+- src/opentelemetry/sdk/metrics/_internal/exemplar/exemplar_filter.py
+  - Copyright (c)  The OpenTelemetry Authors
+- src/opentelemetry/sdk/metrics/_internal/exemplar/exemplar_reservoir.py
+  - Copyright (c)  The OpenTelemetry Authors
+- src/opentelemetry/sdk/metrics/_internal/exemplar/exemplar.py
+  - Copyright (c)  The OpenTelemetry Authors
+- src/opentelemetry/sdk/metrics/_internal/exponential_histogram/buckets.py
+  - Copyright (c)  The OpenTelemetry Authors
+- src/opentelemetry/sdk/metrics/_internal/exponential_histogram/mapping/__init__.py
+  - Copyright (c)  The OpenTelemetry Authors
+- src/opentelemetry/sdk/metrics/_internal/exponential_histogram/mapping/errors.py
+  - Copyright (c)  The OpenTelemetry Authors
+- src/opentelemetry/sdk/metrics/_internal/exponential_histogram/mapping/exponent_mapping.py
+  - Copyright (c)  The OpenTelemetry Authors
+- src/opentelemetry/sdk/metrics/_internal/exponential_histogram/mapping/ieee_754.py
+  - Copyright (c)  The OpenTelemetry Authors
+- src/opentelemetry/sdk/metrics/_internal/exponential_histogram/mapping/logarithm_mapping.py
+  - Copyright (c)  The OpenTelemetry Authors
+- src/opentelemetry/sdk/metrics/_internal/export/__init__.py
+  - Copyright (c)  The OpenTelemetry Authors
+- src/opentelemetry/sdk/metrics/_internal/export/_metric_reader_metrics.py
+  - Copyright (c)  The OpenTelemetry Authors
+- src/opentelemetry/sdk/metrics/_internal/instrument.py
+  - Copyright (c)  The OpenTelemetry Authors
+- src/opentelemetry/sdk/metrics/_internal/measurement_consumer.py
+  - Copyright (c)  The OpenTelemetry Authors
+- src/opentelemetry/sdk/metrics/_internal/measurement.py
+  - Copyright (c)  The OpenTelemetry Authors
+- src/opentelemetry/sdk/metrics/_internal/metric_reader_storage.py
+  - Copyright (c)  The OpenTelemetry Authors
+- src/opentelemetry/sdk/metrics/_internal/point.py
+  - Copyright (c)  The OpenTelemetry Authors
+- src/opentelemetry/sdk/metrics/_internal/sdk_configuration.py
+  - Copyright (c)  The OpenTelemetry Authors
+- src/opentelemetry/sdk/metrics/_internal/view.py
+  - Copyright (c)  The OpenTelemetry Authors
+- src/opentelemetry/sdk/metrics/export/__init__.py
+  - Copyright (c)  The OpenTelemetry Authors
+- src/opentelemetry/sdk/metrics/view/__init__.py
+  - Copyright (c)  The OpenTelemetry Authors
+- src/opentelemetry/sdk/resources/__init__.py
+  - Copyright (c)  The OpenTelemetry Authors
+- src/opentelemetry/sdk/trace/__init__.py
+  - Copyright (c)  The OpenTelemetry Authors
+- src/opentelemetry/sdk/trace/_sampling_experimental/__init__.py
+  - Copyright (c)  The OpenTelemetry Authors
+- src/opentelemetry/sdk/trace/_sampling_experimental/_always_off.py
+  - Copyright (c)  The OpenTelemetry Authors
+- src/opentelemetry/sdk/trace/_sampling_experimental/_always_on.py
+  - Copyright (c)  The OpenTelemetry Authors
+- src/opentelemetry/sdk/trace/_sampling_experimental/_composable.py
+  - Copyright (c)  The OpenTelemetry Authors
+- src/opentelemetry/sdk/trace/_sampling_experimental/_parent_threshold.py
+  - Copyright (c)  The OpenTelemetry Authors
+- src/opentelemetry/sdk/trace/_sampling_experimental/_rule_based.py
+  - Copyright (c)  The OpenTelemetry Authors
+- src/opentelemetry/sdk/trace/_sampling_experimental/_sampler.py
+  - Copyright (c)  The OpenTelemetry Authors
+- src/opentelemetry/sdk/trace/_sampling_experimental/_trace_state.py
+  - Copyright (c)  The OpenTelemetry Authors
+- src/opentelemetry/sdk/trace/_sampling_experimental/_traceid_ratio.py
+  - Copyright (c)  The OpenTelemetry Authors
+- src/opentelemetry/sdk/trace/_sampling_experimental/_util.py
+  - Copyright (c)  The OpenTelemetry Authors
+- src/opentelemetry/sdk/trace/_tracer_metrics.py
+  - Copyright (c)  The OpenTelemetry Authors
+- src/opentelemetry/sdk/trace/export/__init__.py
+  - Copyright (c)  The OpenTelemetry Authors
+- src/opentelemetry/sdk/trace/export/in_memory_span_exporter.py
+  - Copyright (c)  The OpenTelemetry Authors
+- src/opentelemetry/sdk/trace/id_generator.py
+  - Copyright (c)  The OpenTelemetry Authors
+- src/opentelemetry/sdk/trace/sampling.py
+  - Copyright (c)  The OpenTelemetry Authors
+- src/opentelemetry/sdk/util/__init__.py
+  - Copyright (c)  The OpenTelemetry Authors
+- src/opentelemetry/sdk/util/__init__.pyi
+- src/opentelemetry/sdk/util/_configurator.py
+  - Copyright (c)  The OpenTelemetry Authors
+- src/opentelemetry/sdk/util/instrumentation.py
+  - Copyright (c)  The OpenTelemetry Authors
+- src/opentelemetry/sdk/version/__init__.py
+  - Copyright (c)  The OpenTelemetry Authors
+- tests/__init__.py
+  - Copyright (c)  The OpenTelemetry Authors
+- tests/_configuration/test_configurator_file_routing.py
+  - Copyright (c)  The OpenTelemetry Authors
+- tests/conftest.py
+  - Copyright (c)  The OpenTelemetry Authors
+- tests/context/test_asyncio.py
+  - Copyright (c)  The OpenTelemetry Authors
+- tests/error_handler/test_error_handler.py
+  - Copyright (c)  The OpenTelemetry Authors
+- tests/logs/__init__.py
+  - Copyright (c)  The OpenTelemetry Authors
+- tests/logs/scripts/logger_provider_resource_after_fork.py
+  - Copyright (c)  The OpenTelemetry Authors
+- tests/logs/test_export.py
+  - Copyright (c)  The OpenTelemetry Authors
+- tests/logs/test_handler.py
+  - Copyright (c)  The OpenTelemetry Authors
+- tests/logs/test_log_limits.py
+  - Copyright (c)  The OpenTelemetry Authors
+- tests/logs/test_log_record.py
+  - Copyright (c)  The OpenTelemetry Authors
+- tests/logs/test_logger_provider_cache.py
+  - Copyright (c)  The OpenTelemetry Authors
+- tests/logs/test_logs.py
+  - Copyright (c)  The OpenTelemetry Authors
+- tests/logs/test_multi_log_processor.py
+  - Copyright (c)  The OpenTelemetry Authors
+- tests/logs/test_sdk_metrics.py
+  - Copyright (c)  The OpenTelemetry Authors
+- tests/metrics/exponential_histogram/test_exponent_mapping.py
+  - Copyright (c)  The OpenTelemetry Authors
+- tests/metrics/exponential_histogram/test_exponential_bucket_histogram_aggregation.py
+  - Copyright (c)  The OpenTelemetry Authors
+- tests/metrics/exponential_histogram/test_logarithm_mapping.py
+  - Copyright (c)  The OpenTelemetry Authors
+- tests/metrics/integration_test/test_console_exporter.py
+  - Copyright (c)  The OpenTelemetry Authors
+- tests/metrics/integration_test/test_cpu_time.py
+  - Copyright (c)  The OpenTelemetry Authors
+- tests/metrics/integration_test/test_disable_default_views.py
+  - Copyright (c)  The OpenTelemetry Authors
+- tests/metrics/integration_test/test_exemplars.py
+  - Copyright (c)  The OpenTelemetry Authors
+- tests/metrics/integration_test/test_explicit_bucket_histogram_aggregation.py
+  - Copyright (c)  The OpenTelemetry Authors
+- tests/metrics/integration_test/test_exponential_bucket_histogram.py
+  - Copyright (c)  The OpenTelemetry Authors
+- tests/metrics/integration_test/test_exporter_concurrency.py
+  - Copyright (c)  The OpenTelemetry Authors
+- tests/metrics/integration_test/test_histogram_advisory_explicit_buckets.py
+  - Copyright (c)  The OpenTelemetry Authors
+- tests/metrics/integration_test/test_histogram_export.py
+  - Copyright (c)  The OpenTelemetry Authors
+- tests/metrics/integration_test/test_nonfinite_measurements.py
+  - Copyright (c)  The OpenTelemetry Authors
+- tests/metrics/integration_test/test_provider_shutdown.py
+  - Copyright (c)  The OpenTelemetry Authors
+- tests/metrics/integration_test/test_sum_aggregation.py
+  - Copyright (c)  The OpenTelemetry Authors
+- tests/metrics/integration_test/test_time_align.py
+  - Copyright (c)  The OpenTelemetry Authors
+- tests/metrics/scripts/meter_provider_resource_after_fork.py
+  - Copyright (c)  The OpenTelemetry Authors
+- tests/metrics/test_aggregation.py
+  - Copyright (c)  The OpenTelemetry Authors
+- tests/metrics/test_backward_compat.py
+  - Copyright (c)  The OpenTelemetry Authors
+- tests/metrics/test_exemplarfilter.py
+  - Copyright (c)  The OpenTelemetry Authors
+- tests/metrics/test_exemplarreservoir.py
+  - Copyright (c)  The OpenTelemetry Authors
+- tests/metrics/test_import.py
+  - Copyright (c)  The OpenTelemetry Authors
+- tests/metrics/test_in_memory_metric_reader.py
+  - Copyright (c)  The OpenTelemetry Authors
+- tests/metrics/test_instrument.py
+  - Copyright (c)  The OpenTelemetry Authors
+- tests/metrics/test_measurement_consumer.py
+  - Copyright (c)  The OpenTelemetry Authors
+- tests/metrics/test_metric_reader_storage.py
+  - Copyright (c)  The OpenTelemetry Authors
+- tests/metrics/test_metric_reader.py
+  - Copyright (c)  The OpenTelemetry Authors
+- tests/metrics/test_metrics.py
+  - Copyright (c)  The OpenTelemetry Authors
+- tests/metrics/test_periodic_exporting_metric_reader.py
+  - Copyright (c)  The OpenTelemetry Authors
+- tests/metrics/test_point.py
+  - Copyright (c)  The OpenTelemetry Authors
+- tests/metrics/test_view_instrument_match.py
+  - Copyright (c)  The OpenTelemetry Authors
+- tests/metrics/test_view.py
+  - Copyright (c)  The OpenTelemetry Authors
+- tests/resources/test_resources.py
+  - Copyright (c)  The OpenTelemetry Authors
+- tests/shared_internal/__init__.py
+  - Copyright (c)  The OpenTelemetry Authors
+- tests/shared_internal/test_batch_processor.py
+  - Copyright (c)  The OpenTelemetry Authors
+- tests/test_configurator.py
+  - Copyright (c)  The OpenTelemetry Authors
+- tests/test_environment_variables_internal.py
+  - Copyright (c)  The OpenTelemetry Authors
+- tests/test_util.py
+  - Copyright (c)  The OpenTelemetry Authors
+- tests/trace/__init__.py
+  - Copyright (c)  The OpenTelemetry Authors
+- tests/trace/composite_sampler/test_always_off.py
+  - Copyright (c)  The OpenTelemetry Authors
+- tests/trace/composite_sampler/test_always_on.py
+  - Copyright (c)  The OpenTelemetry Authors
+- tests/trace/composite_sampler/test_rule_based.py
+  - Copyright (c)  The OpenTelemetry Authors
+- tests/trace/composite_sampler/test_sampler.py
+  - Copyright (c)  The OpenTelemetry Authors
+- tests/trace/composite_sampler/test_traceid_ratio.py
+  - Copyright (c)  The OpenTelemetry Authors
+- tests/trace/composite_sampler/test_tracestate.py
+  - Copyright (c)  The OpenTelemetry Authors
+- tests/trace/export/__init__.py
+  - Copyright (c)  The OpenTelemetry Authors
+- tests/trace/export/test_export.py
+  - Copyright (c)  The OpenTelemetry Authors
+- tests/trace/export/test_in_memory_span_exporter.py
+  - Copyright (c)  The OpenTelemetry Authors
+- tests/trace/scripts/tracer_provider_resource_after_fork.py
+  - Copyright (c)  The OpenTelemetry Authors
+- tests/trace/test_globals.py
+  - Copyright (c)  The OpenTelemetry Authors
+- tests/trace/test_implementation.py
+  - Copyright (c)  The OpenTelemetry Authors
+- tests/trace/test_sampling.py
+  - Copyright (c)  The OpenTelemetry Authors
+- tests/trace/test_sdk_metrics.py
+  - Copyright (c)  The OpenTelemetry Authors
+- tests/trace/test_span_processor.py
+  - Copyright (c)  The OpenTelemetry Authors
+- tests/trace/test_trace.py
+  - Copyright (c)  The OpenTelemetry Authors
+--------------------------------------------------------------------------------
+
+* Copyrights *
+Apache-2.0
+- Copyright (c)  The OpenTelemetry Authors
+
+* Package Info *
+
+Authors: OpenTelemetry Authors <cncf-opentelemetry-contributors@lists.cncf.io>
+Package Manager: Pip
+Project URL: https://pypi.org/project/opentelemetry-sdk/
+Package Download URL: https://files.pythonhosted.org/packages/5d/77/a6592cbc7c8d9bcc9d6757a9df45e04a7c585e3e6e7a13456da522b21109/opentelemetry_sdk-1.44.0.tar.gz
+Dependency Path: opentelemetry-sdk
+
+--------------------------------------------------------------------------------
+Package Title: pillow (12.3.0)
+
+Package Locator: pip+pillow$12.3.0
+
+Package Depth: Direct
+--------------------------------------------------------------------------------
+
+<p align="center">
+    <img width="248" height="250" src="https://raw.githubusercontent.com/python-pillow/pillow-logo/main/pillow-logo-248x250.png" alt="Pillow logo">
+</p>
+
+# Pillow
+
+## Python Imaging Library (Fork)
+
+Pillow is the friendly PIL fork by [Jeffrey A. Clark and
+contributors](https://github.com/python-pillow/Pillow/graphs/contributors).
+PIL is the Python Imaging Library by Fredrik Lundh and contributors.
+As of 2019, Pillow development is
+[supported by Tidelift](https://tidelift.com/subscription/pkg/pypi-pillow?utm_source=pypi-pillow&utm_medium=readme&utm_campaign=enterprise).
+
+<table>
+    <tr>
+        <th>docs</th>
+        <td>
+            <a href="https://pillow.readthedocs.io/?badge=latest"><img
+                alt="Documentation Status"
+                src="https://readthedocs.org/projects/pillow/badge/?version=latest"></a>
+        </td>
+    </tr>
+    <tr>
+        <th>tests</th>
+        <td>
+            <a href="https://github.com/python-pillow/Pillow/actions/workflows/lint.yml"><img
+                alt="GitHub Actions build status (Lint)"
+                src="https://github.com/python-pillow/Pillow/workflows/Lint/badge.svg"></a>
+            <a href="https://github.com/python-pillow/Pillow/actions/workflows/test.yml"><img
+                alt="GitHub Actions build status (Test Linux and macOS)"
+                src="https://github.com/python-pillow/Pillow/workflows/Test/badge.svg"></a>
+            <a href="https://github.com/python-pillow/Pillow/actions/workflows/test-windows.yml"><img
+                alt="GitHub Actions build status (Test Windows)"
+                src="https://github.com/python-pillow/Pillow/workflows/Test%20Windows/badge.svg"></a>
+            <a href="https://github.com/python-pillow/Pillow/actions/workflows/test-mingw.yml"><img
+                alt="GitHub Actions build status (Test MinGW)"
+                src="https://github.com/python-pillow/Pillow/workflows/Test%20MinGW/badge.svg"></a>
+            <a href="https://github.com/python-pillow/Pillow/actions/workflows/test-cygwin.yml"><img
+                alt="GitHub Actions build status (Test Cygwin)"
+                src="https://github.com/python-pillow/Pillow/workflows/Test%20Cygwin/badge.svg"></a>
+            <a href="https://github.com/python-pillow/Pillow/actions/workflows/test-docker.yml"><img
+                alt="GitHub Actions build status (Test Docker)"
+                src="https://github.com/python-pillow/Pillow/workflows/Test%20Docker/badge.svg"></a>
+            <a href="https://github.com/python-pillow/Pillow/actions/workflows/wheels.yml"><img
+                alt="GitHub Actions build status (Wheels)"
+                src="https://github.com/python-pillow/Pillow/workflows/Wheels/badge.svg"></a>
+            <a href="https://app.codecov.io/gh/python-pillow/Pillow"><img
+                alt="Code coverage"
+                src="https://codecov.io/gh/python-pillow/Pillow/branch/main/graph/badge.svg"></a>
+            <a href="https://issues.oss-fuzz.com/issues?q=title:pillow"><img
+                alt="Fuzzing Status"
+                src="https://oss-fuzz-build-logs.storage.googleapis.com/badges/pillow.svg"></a>
+        </td>
+    </tr>
+    <tr>
+        <th>package</th>
+        <td>
+            <a href="https://zenodo.org/badge/latestdoi/17549/python-pillow/Pillow"><img
+                alt="Zenodo"
+                src="https://zenodo.org/badge/17549/python-pillow/Pillow.svg"></a>
+            <a href="https://tidelift.com/subscription/pkg/pypi-pillow?utm_source=pypi-pillow&utm_medium=badge"><img
+                alt="Tidelift"
+                src="https://tidelift.com/badges/package/pypi/pillow?style=flat"></a>
+            <a href="https://pypi.org/project/pillow/"><img
+                alt="Newest PyPI version"
+                src="https://img.shields.io/pypi/v/pillow.svg"></a>
+            <a href="https://pypi.org/project/pillow/"><img
+                alt="Number of PyPI downloads"
+                src="https://img.shields.io/pypi/dm/pillow.svg"></a>
+            <a href="https://www.bestpractices.dev/projects/6331"><img
+                alt="OpenSSF Best Practices"
+                src="https://www.bestpractices.dev/projects/6331/badge"></a>
+        </td>
+    </tr>
+    <tr>
+        <th>social</th>
+        <td>
+            <a href="https://gitter.im/python-pillow/Pillow?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge&utm_content=badge"><img
+                alt="Join the chat at https://gitter.im/python-pillow/Pillow"
+                src="https://badges.gitter.im/python-pillow/Pillow.svg"></a>
+            <a href="https://fosstodon.org/@pillow"><img
+                alt="Follow on https://fosstodon.org/@pillow"
+                src="https://img.shields.io/badge/publish-on%20Mastodon-595aff.svg"
+                rel="me"></a>
+        </td>
+    </tr>
+</table>
+
+## Overview
+
+The Python Imaging Library adds image processing capabilities to your Python interpreter.
+
+This library provides extensive file format support, an efficient internal representation, and fairly powerful image processing capabilities.
+
+The core image library is designed for fast access to data stored in a few basic pixel formats. It should provide a solid foundation for a general image processing tool.
+
+## More Information
+
+- [Documentation](https://pillow.readthedocs.io/)
+  - [Installation](https://pillow.readthedocs.io/en/latest/installation/basic-installation.html)
+  - [Handbook](https://pillow.readthedocs.io/en/latest/handbook/index.html)
+- [Contribute](https://github.com/python-pillow/Pillow/blob/main/.github/CONTRIBUTING.md)
+  - [Issues](https://github.com/python-pillow/Pillow/issues)
+  - [Pull requests](https://github.com/python-pillow/Pillow/pulls)
+- [Release notes](https://pillow.readthedocs.io/en/stable/releasenotes/index.html)
+- [Changelog](https://github.com/python-pillow/Pillow/releases)
+  - [Pre-fork](https://github.com/python-pillow/Pillow/blob/main/CHANGES.rst#pre-fork)
+
+## Report a Vulnerability
+
+To report a security vulnerability, please follow the procedure described in the [Tidelift security policy](https://tidelift.com/docs/security).
+
+
+* Declared Licenses *
+PIL
+
+* Other Licenses *
+0BSD, CC0-1.0, Apache-2.0, OFL-1.1, BitstreamVera, HPND, MIT, mit-modern, TCL
+
+* 0BSD *
+
+* CC0-1.0 *
+
+* Apache-2.0 *
+
+* OFL-1.1 *
+
+* BitstreamVera *
+
+* HPND *
+
+* MIT *
+
+* mit-modern *
+
+* TCL *
+
+* Copyrights *
+PIL
+- Copyright (c) 1997-2011 by Secret Labs AB
+0BSD
+- Copyright (c)  Contributors to the pythoncapi_compat project.
+Apache-2.0
+- Copyright (c) 2018 Roel Nieskens, https://pixelambacht.nl Copyright (c) 2018 Google LLC
+OFL-1.1
+- Copyright (c) 2018 Roel Nieskens, https://pixelambacht.nl Copyright (c) 2018 Google LLC
+BitstreamVera
+- Copyright (c)  is on Gnome page on Bitstream Vera fonts. Glyphs imported from Arev fonts are © Tavmjung Bah (see below)
+HPND
+- Copyright (c) 1984, 1987 Adobe Systems, Inc.
+MIT
+- Copyright (c) 2010 Oliver Tonnhofer <olt@bogosoft.com>, Omniscale
+mit-modern
+- Copyright (c) 2011 Google, Inc.
+TCL
+- Copyright (c) 1987-1994 The Regents of the University of California.
+
+* Package Info *
+
+Authors: "Jeffrey A. Clark" <aclark@aclark.net>
+Package Manager: Pip
+Project URL: https://pypi.org/project/pillow/
+Package Download URL: https://files.pythonhosted.org/packages/25/c2/669d88644cddb1485bd9534e63e8cf476c8e51cb3c3a1297677023505c0e/pillow-12.3.0-cp310-cp310-macosx_10_10_x86_64.whl
+Dependency Path: pillow
+
+--------------------------------------------------------------------------------
+Package Title: pydantic (2.13.4)
+
+Package Locator: pip+pydantic$2.13.4
+
+Package Depth: Direct
+--------------------------------------------------------------------------------
+
+Data validation using Python type hints
+
+* Declared Licenses *
+MIT
+--------------------------------------------------------------------------------
+File matches:
+- LICENSE
+  - Copyright (c) 2017 to present Pydantic Services Inc. and individual contributors.
+--------------------------------------------------------------------------------
+
+* Copyrights *
+MIT
+- Copyright (c) 2017 to present Pydantic Services Inc. and individual contributors.
+
+* Package Info *
+
+Authors: Samuel Colvin <s@muelcolvin.com>, Eric Jolibois <em.jolibois@gmail.com>, Hasan Ramezani <hasan.r67@gmail.com>, Adrian Garcia Badaracco <1755071+adriangb@users.noreply.github.com>, Terrence Dorsey <terry@pydantic.dev>, David Montague <david@pydantic.dev>, Serge Matveenko <lig@countzero.co>, Marcelo Trylesinski <marcelotryle@gmail.com>, Sydney Runkle <sydneymarierunkle@gmail.com>, David Hewitt <mail@davidhewitt.dev>, Alex Hall <alex.mojaki@gmail.com>, Victorien Plot <contact@vctrn.dev>
+Package Manager: Pip
+Project URL: https://pypi.org/project/pydantic/
+Package Download URL: https://files.pythonhosted.org/packages/18/a5/b60d21ac674192f8ab0ba4e9fd860690f9b4a6e51ca5df118733b487d8d6/pydantic-2.13.4.tar.gz
+Dependency Path: pydantic
+
+--------------------------------------------------------------------------------
+Package Title: ragas (0.4.3)
+
+Package Locator: pip+ragas$0.4.3
+
+Package Depth: Direct
+--------------------------------------------------------------------------------
+
+Evaluation framework for RAG and LLM applications
+
+* Declared Licenses *
+Apache-2.0
+--------------------------------------------------------------------------------
+File matches:
+- examples/LICENSE
+  - Copyright (c) 2023 Vibrant Labs]
+- LICENSE
+  - Copyright (c) 2023 Vibrant Labs]
+- PKG-INFO
+  - Copyright (c) 2023 Vibrant Labs]
+- src/ragas.egg-info/PKG-INFO
+  - Copyright (c) 2023 Vibrant Labs]
+--------------------------------------------------------------------------------
+
+* Other Licenses *
+CC-BY-NC-SA-4.0
+--------------------------------------------------------------------------------
+File matches:
+- docs/howtos/applications/text2sql.md
+--------------------------------------------------------------------------------
+
+* Copyrights *
+Apache-2.0
+- Copyright (c) 2023 Vibrant Labs]
+
+* Package Info *
+
+Package Manager: Pip
+Project URL: https://pypi.org/project/ragas/
+Package Download URL: https://files.pythonhosted.org/packages/d2/bc/3234517692ac0ffae1ec2ec940992e4057844c49ee6c51c07ce385bb98f1/ragas-0.4.3.tar.gz
+Dependency Path: ragas
+
+--------------------------------------------------------------------------------
+Package Title: uvicorn (0.27.0)
+
+Package Locator: pip+uvicorn$0.27.0
+
+Package Depth: Direct
+--------------------------------------------------------------------------------
+
+The lightning-fast ASGI server.
+
+* Declared Licenses *
+BSD-3-Clause
+--------------------------------------------------------------------------------
+File matches:
+- LICENSE.md
+  - Copyright (c) 2017 present, [Encode OSS Ltd](https://www.encode.io/).
+- uvicorn/_types.py
+  - Copyright (c)  Django Software Foundation and individual contributors.
+--------------------------------------------------------------------------------
+
+* Copyrights *
+BSD-3-Clause
+- Copyright (c) 2017 present, [Encode OSS Ltd](https://www.encode.io/).
+- Copyright (c)  Django Software Foundation and individual contributors.
+
+* Package Info *
+
+Authors: Tom Christie <tom@tomchristie.com>
+Package Manager: Pip
+Project URL: https://pypi.org/project/uvicorn/
+Package Download URL: https://files.pythonhosted.org/packages/52/75/9cf554ed256d8bcdf3a9bb831b599c4e48e4e5993931fb512f75e529ece4/uvicorn-0.27.0.tar.gz
+Dependency Path: uvicorn
+
+
+--------------------------------------------------------------------------------
+--------------------------------------------------------------------------------
+
+Report Generated by FOSSA on 2026-10-7

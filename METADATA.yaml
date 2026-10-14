@@ -1,0 +1,54 @@
+# Cloudera Blueprint catalog metadata
+
+# --- Identity ---
+name: "Evaluating LLM and Agentic Workflows"
+slug: "evaluating-llm-and-agentic-workflows"
+description: "CAI Eval Platform — Phoenix-backed evaluation for OpenAI-compatible LLM endpoints and Cloudera Agent Studio workflows with Ragas metrics, bundled benchmarks, and one-click CAI Application / AMP deployment."
+reprise_link: ""
+
+# --- Classification (website filters) ---
+catalog_classification:
+  - Enterprise Blueprint
+launchable: true
+lifecycle_status: Active
+
+# --- Industry & alignment ---
+industry: Cross-Industry
+industry_alignment: "Horizontal"
+target_vertical: "LLM and agent evaluation on Cloudera AI"
+
+# --- Tags (website search & browse) ---
+tags:
+  - evaluation
+  - phoenix
+  - arize-phoenix
+  - ragas
+  - agent-studio
+  - vllm
+  - fastapi
+  - benchmarks
+  - llm-as-judge
+
+# --- Relationships ---
+product_mapping:
+  - Cloudera AI Workbench
+  - Cloudera AI Inference Service
+  - Cloudera Agent Studio
+model_dependencies:
+  - Judge LLM (OpenAI-compatible endpoint)
+  - Model or workflow under test (OpenAI-compatible API or Agent Studio)
+
+# --- Provenance ---
+publisher: cloudera
+source: Internal
+
+# --- Repository & assets ---
+public_github_link: "https://github.com/cloudera-applied-ai/AI_Blueprint_Evaluating-LLM-and-Agentic-Workflows"
+
+# --- Ownership ---
+maintainer_name: "Cloudera Applied AI"
+
+# --- Dates ---
+date_created: "2026-06-18"
+date_updated: "2026-10-14"
+published_date: "2026-10-14"
