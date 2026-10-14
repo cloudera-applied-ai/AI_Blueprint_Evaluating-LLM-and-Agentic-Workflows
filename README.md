@@ -1,9 +1,9 @@
 # Cloudera Blueprint: Evaluating LLM and Agentic Workflows
 
+[![Author-Qishuai Zhong](https://img.shields.io/badge/Author-Qishuai%20Zhong-555555)](https://github.com/FerdinandZhong)
 [![License](https://img.shields.io/badge/License-Apache%202.0-blue.svg)](LICENSE)
 [![Python](https://img.shields.io/badge/Python-3.11%2B-blue.svg)](pyproject.toml)
 [![Cloudera Blueprint](https://img.shields.io/badge/Cloudera-Blueprint-f96702.svg)](METADATA.yaml)
-[![Author-Qishuai Zhong](https://img.shields.io/badge/Author-Qishuai%20Zhong-555555)]()
 [![Docs](https://img.shields.io/badge/docs-mkdocs-blue)](https://cloudera-applied-ai.github.io/AI_Blueprint_Evaluating-LLM-and-Agentic-Workflows/)
 [![Stars](https://img.shields.io/github/stars/cloudera-applied-ai/AI_Blueprint_Evaluating-LLM-and-Agentic-Workflows?logo=github&cacheSeconds=300)](https://github.com/cloudera-applied-ai/AI_Blueprint_Evaluating-LLM-and-Agentic-Workflows/stargazers)
 [![Forks](https://img.shields.io/github/forks/cloudera-applied-ai/AI_Blueprint_Evaluating-LLM-and-Agentic-Workflows?logo=github&cacheSeconds=300)](https://github.com/cloudera-applied-ai/AI_Blueprint_Evaluating-LLM-and-Agentic-Workflows/network/members)
